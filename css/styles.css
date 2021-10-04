@@ -55,6 +55,23 @@ a:active {
   font-weight: bold;
 }
 
+.index-body__blue-span {
+  color: blue;
+  background-color: lightgrey;
+  padding-left: 3px;
+}
+
+.index-body__white-span {
+  color: white;
+  background-color: lightgrey;
+}
+
+.index-body__red-span {
+  color: red;
+  background-color: lightgrey;
+  padding-right: 3px;
+}
+
 button, .button {
   border: none;
   display: inline-block;
