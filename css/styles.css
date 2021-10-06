@@ -11,7 +11,7 @@
 body {
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 26px;
   line-height: 1.6;
   color: var(--dark-grey);
   min-height: 100vh;
@@ -24,17 +24,17 @@ main {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: var(--font-weight-title);
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 34px;
   font-weight: var(--font-weight-title);
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 28px;
   font-weight: var(--font-weight-title);
 }
 
@@ -65,19 +65,19 @@ a:active {
 }
 
 .index-body__blue-span {
-  color: blue;
-  background-color: lightgrey;
+  color: white;
+  background-color: blue;
   padding-left: 3px;
 }
 
 .index-body__white-span {
-  color: white;
-  background-color: lightgrey;
+  color: black;
+  background-color: white;
 }
 
 .index-body__red-span {
-  color: red;
-  background-color: lightgrey;
+  color: white;
+  background-color: #e00;
   padding-right: 3px;
 }
 
@@ -101,7 +101,7 @@ button:focus,
 .button:focus {
   cursor: pointer;
   opacity: 0.8;
-  font-size: 17px;
+  font-size: 27px;
 }
 
 button:visited,
@@ -338,8 +338,20 @@ a.navigation-list__item {
     grid-gap: 10px;
   }
 
-  h1 {
+  body {
     font-size: 22px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 28px;
   }
 
   .berlin-illustration {
@@ -356,6 +368,29 @@ a.navigation-list__item {
   .berlin-illustration {
     max-width: 350px;
     max-height: 200px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  button:hover,
+  button:focus,
+  .button:hover,
+  .button:focus {
+    font-size: 19px;
   }
 
   #header-logo {
