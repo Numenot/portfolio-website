@@ -1,7 +1,7 @@
 body {
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.6;
   color: #2b2b2b;
   min-height: 100vh;
@@ -19,17 +19,17 @@ main {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 700;
 }
 
@@ -112,7 +112,7 @@ button:focus,
 .button:focus {
   cursor: pointer;
   opacity: 0.8;
-  font-size: 27px;
+  font-size: 25px;
 }
 
 button:visited,
@@ -260,7 +260,7 @@ a.navigation-list__item {
 /* grid fallback */
 .grid__item {
   display: inline-block;
-  width: 50%;
+  width: 33%;
 }
 
 /* grid fallback */
@@ -269,8 +269,8 @@ a.navigation-list__item {
   .grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
   }
 
@@ -451,15 +451,7 @@ a.navigation-list__item {
   margin-bottom: 5rem;
 }
 
-@media all and (max-width: 500px) {
-  .grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-  }
-}
-
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 750px) and (max-width: 1250px) {
   .grid {
     -ms-grid-columns: 1fr 10px 1fr;
     grid-template-columns: 1fr 1fr;
@@ -467,24 +459,35 @@ a.navigation-list__item {
 }
 
 @media all and (max-width: 750px) {
+
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  
   .grid {
     grid-gap: 10px;
   }
 
+  .grid__item p {
+    display: none;
+  }
+
   body {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 34px;
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   h3 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .berlin-illustration {
@@ -504,19 +507,19 @@ a.navigation-list__item {
   }
 
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   h1 {
-    font-size: 24px;
-  }
-
-  h2 {
     font-size: 22px;
   }
 
-  h3 {
+  h2 {
     font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
   }
 
   button:hover,
