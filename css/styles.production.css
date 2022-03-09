@@ -259,7 +259,7 @@ a.navigation-list__item {
 }
 
 .image-container:hover .grid-image {
-  opacity: 0.3;
+  opacity: 0.2;
   transition: opacity 0.5s ease-out;
   -webkit-transition: opacity 0.5s ease-out;  
   -moz-transition: opacity 0.5s ease-in-out;   
@@ -283,8 +283,13 @@ a.navigation-list__item {
   color: black;
 }
 
+.grid__item__buttons {
+  text-align: center;
+  font-size: 20px;
+}
+
 .grid-image {
-  width: 100%;
+  width: 80%;
 }
 
 /* grid fallback */
@@ -530,6 +535,14 @@ a.navigation-list__item {
   .berlin-illustration {
     max-width: 350px;
     max-height: 200px;
+  }
+
+  .centered {
+    display: none;
+  }
+
+  .grid__item__buttons {
+    font-size: 14px;
   }
 
   body {
