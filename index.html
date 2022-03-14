@@ -16,38 +16,52 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <img src="img/quentin-vinesse-logo-2.png" alt="logo of Quentin Vinesse, a text logo of my name"
-      class="page-header__item" id="header-logo">
-    <nav class="page-header__item main-navigation">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="#about" role="menuitem" class="navigation-list__item">About me</a>
-        </li>
-        <li role="presentation">
-          <a href="#my-work" role="menuitem" class="navigation-list__item">My work</a>
-        </li>
-        <li role="presentation">
-          <a href="#contact" role="menuitem" class="navigation-list__item">Contact</a>
-        </li>
-      </ul>
-    </nav>
+  <!-- Navbar -->
+  <header>
+    <div class="nav_container">
+      <div class="nav_items_left">
+        <span>Quentin Vinesse</span>
+      </div>
+      <div class="nav_items_right">
+        <div class="nav_items">
+          <button onclick="window.location.href='#about'">About me</button>
+        </div>
+        <div class="nav_items">
+          <button onclick="window.location.href='#my-work'">My work</button>
+        </div>
+        <div class="nav_items">
+          <button onclick="window.location.href='#contact'">Contact</button>
+        </div>
+      </div>
+    </div>
   </header>
+
   <main>
+    <!-- Profile section -->
     <div class="profile">
       <div class="profile-bio">
-        <img src="img/quentin-vinesse-portrait.png" class="profile__portrait" alt="headshot of Quentin Vinesse">
-        <h1>Hello World!</h1>
-        <p>
-          My name is Quentin Vinesse. I am an aspiring web developer from <span
-            class="index-body__blue-span">Fr</span><span class="index-body__white-span">an</span><span
-            class="index-body__red-span">ce</span>.
-        </p>
-        <a href="https://github.com/Numenot?tab=repositories" class="button">Check out some of my code</a>
+        <div class="profile_image">
+          <img src="img/quentin-vinesse-portrait.png" class="profile__portrait" alt="headshot of Quentin Vinesse">
+        </div>
+        <div class="profile_desc">
+          <h1>Hello World!</h1>
+          <p>
+            My name is Quentin Vinesse.
+            <br>
+            I am a project manager and web developer from <span class="index-body__blue-span">Fr</span><span
+              class="index-body__white-span">an</span><span class="index-body__red-span">ce</span>.
+          </p>
+          <div class="profile_buttons">
+            <a href="https://github.com/Numenot" class="button" target="_blank">Check out some of my
+              code</a>
+            <a href="files/quentin-vinesse-resume.pdf" class="button" download>Download my resume</a>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <!-- Berlin image -->
+    <div class="berlin_image">
       <svg xmlns="http://www.w3.org/2000/svg" class="berlin-illustration main-about__item" height="505"
         viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
@@ -1015,7 +1029,11 @@
         </g>
       </svg>
     </div>
-    <div class="page-body main-about__section">
+
+    <hr class="main_page_breaks">
+
+    <!-- About/skills section -->
+    <div class="main-about__section">
       <h1 id="about" class="main-about__item">About</h1>
       <div class="main-about__item">
         <table>
@@ -1070,134 +1088,183 @@
           </tbody>
         </table>
       </div>
-      <a href="files/quentin-vinesse-resume.pdf" class="button main-about__item" download>Download my resume</a>
-      <section class="page-body">
-        <h1 id="my-work">My work</h1>
-        <div class="grid">
-          <div class="grid__item pokedex-item">
-            <h2>Pokedex</h2>
-            <div class="image-container">
-              <img src="./img/Pokedex.png" alt="pokedex screenshot" class="grid-image">
-              <p class="centered">
-                Javascript application allowing users to access the original list of Pokemon.
-                Data is loaded from an external source (API), in this case using the PokeAPI.
-              </p>
-            </div>
-            <div class="grid__item__buttons">
-              <a class="button button_portfolio" href="https://github.com/Numenot/pokedex-js-app" target="_blank">See
-                project on GitHub</a>
-              <br />
-              <a class="button" href="https://numenot.github.io/pokedex-js-app/" target="_blank">Live site</a>
-            </div>
+    </div>
+
+    <hr class="main_page_breaks">
+
+    <!-- Portfolio section -->
+    <div class="page-body">
+      <h1 id="my-work">My work</h1>
+      <div class="grid">
+        <div class="grid__item pokedex-item">
+          <h2>Pokedex</h2>
+          <div class="stack_logo_container">
+            <img src="./img/html-5.png" alt="html5 logo" class="stack_logo">
+            <img src="./img/css3.png" alt="css3 logo" class="stack_logo">
+            <img src="./img/javascript.png" alt="javascript logo" class="stack_logo">
+            <img src="./img/bootstrap.png" alt="bootstrap logo" class="stack_logo">
           </div>
-          <div class="grid__item">
-            <h2>MyFlix Movies</h2>
-            <div class="image-container">
-              <img src="./img/myFlix.png" alt="myFlix App screenshot" class="grid-image">
-              <p class="centered">
-                Built both the server-side component using Express and the front-end using React.
-                Users are able to sign up, view movies, update their personal information, and create a list of their
-                favorite
-                movies.
-              </p>
-            </div>
-            <div class="grid__item__buttons">
-              <a class="button" href="https://github.com/Numenot/myFlix-client" target="_blank">See project on
-                GitHub</a>
-              <br />
-              <a class="button" href="https://myflix-myflixapp.netlify.app/" target="_blank">Live site</a>
-            </div>
+          <div class="image-container">
+            <img src="./img/Pokedex.png" alt="pokedex screenshot" class="grid-image">
+            <p class="centered">
+              Javascript application allowing users to access the original list of Pokemon.
+              Data is loaded from an external source (API), in this case using the PokeAPI.
+            </p>
           </div>
-          <div class="grid__item">
-            <h2>To-Do List</h2>
-            <div class="image-container">
-              <img src="./img/Todo-list.png" alt="To-do List screenshot" class="grid-image">
-              <p class="centered">
-                Small and simple App built using JQuery, allowing users to add items to their list, cross them once
-                done, or remove them all together.
-              </p>
-            </div>
-            <div class="grid__item__buttons">
-              <a class="button" href="https://github.com/Numenot/to-do-list-app" target="_blank">See project on
-                GitHub</a>
-              <br />
-              <a class="button" href="https://numenot.github.io/to-do-list-app/" target="_blank">Live site</a>
-            </div>
-          </div>
-          <div class="grid__item">
-            <h2>Meet Events App</h2>
-            <div class="image-container">
-              <img src="./img/Meet.png" alt="Meet events App screenshot" class="grid-image">
-              <p class="centered">
-                Serverless, progressive web application (PWA) with React using a test-driven development (TDD)
-                technique.
-                The application uses the Google Calendar API to fetch upcoming events.
-              </p>
-            </div>
-            <div class="grid__item__buttons">
-              <a class="button" href="https://github.com/Numenot/meet_app" target="_blank">See project on GitHub</a>
-              <br />
-              <a class="button" href="https://numenot.github.io/meet_app/" target="_blank">Live site</a>
-            </div>
-          </div>
-          <div class="grid__item">
-            <h2>Mobile Chat App</h2>
-            <div class="image-container">
-              <img src="./img/chat-app-screenshot.png" alt="Mobile Chat App screenshot" class="grid-image">
-              <p class="centered">
-                Chat App built using React Native, Expo, and Google Firestore Database. Allows user to send messages,
-                images and their location via chat. Messages are saved and can be seen offline.
-              </p>
-            </div>
-            <div class="grid__item__buttons">
-              <a class="button" href="https://github.com/Numenot/Chat-App" target="_blank">See project on GitHub</a>
-            </div>
-          </div>
-          <div class="grid__item">
-            <h2>myFlix (Angular)</h2>
-            <div class="image-container">
-              <img src="./img/myFlix-Angular.png" alt="myFlix Angular screenshot" class="grid-image">
-              <p class="centered">
-                Application built using Angular (version 9) and designed using Angular Material. Movie data is pulled
-                from my own
-                REST API and database.
-              </p>
-            </div>
-            <div class="grid__item__buttons">
-              <a class="button" href="https://github.com/Numenot/myFlix-Angular-client/" target="_blank">See project on
-                GitHub</a>
-              <br />
-              <a class="button" href="https://numenot.github.io/myFlix-Angular-client/welcome" target="_blank">Live
-                site</a>
-            </div>
+          <div class="grid__item__buttons">
+            <a class="button button_portfolio" href="https://github.com/Numenot/pokedex-js-app" target="_blank">See
+              project on GitHub</a>
+            <br />
+            <a class="button" href="https://numenot.github.io/pokedex-js-app/" target="_blank">Live site</a>
           </div>
         </div>
-      </section>
-      <div class="page-body contact-page__body">
-        <h1 id="contact">Contact me</h1>
-        <div>
-          10625 Berlin<br>
-          Germany<br>
-          <br>
-          My email: <a href="mailto:qlv6719@gmail.com">qlv6719(at)gmail(dot)com</a>
-          <br>
-          Reach out on: <a href="https://www.linkedin.com/in/quentinvinesse">LinkedIn</a>
-          <br>
-          <a href="https://medium.com/@qlv6719"> Medium</a>
-          <br>
-          <a href="https://twitter.com/QVinesse"> Twitter</a>
+        <div class="grid__item">
+          <h2>MyFlix Movies</h2>
+          <div class="stack_logo_container">
+            <img src="./img/html-5.png" alt="html5 logo" class="stack_logo">
+            <img src="./img/css3.png" alt="css3 logo" class="stack_logo">
+            <img src="./img/javascript.png" alt="javascript logo" class="stack_logo">
+            <img src="./img/mongodb.png" alt="mongo logo" class="stack_logo">
+            <img src="./img/express.png" alt="express logo" class="stack_logo">
+            <img src="./img/react.png" alt="react logo" class="stack_logo">
+            <img src="./img/nodejs.png" alt="nodejs logo" class="stack_logo">
+          </div>
+          <div class="image-container">
+            <img src="./img/myFlix.png" alt="myFlix App screenshot" class="grid-image">
+            <p class="centered">
+              Built both the server-side component using Express and the front-end using React.
+              Users are able to sign up, view movies, update their personal information, and create a list of their
+              favorite
+              movies.
+            </p>
+          </div>
+          <div class="grid__item__buttons">
+            <a class="button" href="https://github.com/Numenot/myFlix-client" target="_blank">See project on
+              GitHub</a>
+            <br />
+            <a class="button" href="https://myflix-myflixapp.netlify.app/" target="_blank">Live site</a>
+          </div>
+        </div>
+        <div class="grid__item">
+          <h2>To-Do List</h2>
+          <div class="stack_logo_container">
+            <img src="./img/html-5.png" alt="html5 logo" class="stack_logo">
+            <img src="./img/css3.png" alt="css3 logo" class="stack_logo">
+            <img src="./img/jquery.png" alt="jquery logo" class="stack_logo">
+          </div>
+          <div class="image-container">
+            <img src="./img/Todo-list.png" alt="To-do List screenshot" class="grid-image">
+            <p class="centered">
+              Small and simple App built using JQuery, allowing users to add items to their list, cross them once
+              done, or remove them all together.
+            </p>
+          </div>
+          <div class="grid__item__buttons">
+            <a class="button" href="https://github.com/Numenot/to-do-list-app" target="_blank">See project on
+              GitHub</a>
+            <br />
+            <a class="button" href="https://numenot.github.io/to-do-list-app/" target="_blank">Live site</a>
+          </div>
+        </div>
+        <div class="grid__item">
+          <h2>Meet Events App</h2>
+          <div class="stack_logo_container">
+            <img src="./img/html-5.png" alt="html5 logo" class="stack_logo">
+            <img src="./img/css3.png" alt="css3 logo" class="stack_logo">
+            <img src="./img/javascript.png" alt="javascript logo" class="stack_logo">
+            <img src="./img/react.png" alt="react logo" class="stack_logo">
+            <img src="./img/nodejs.png" alt="nodejs logo" class="stack_logo">
+          </div>
+          <div class="image-container">
+            <img src="./img/Meet.png" alt="Meet events App screenshot" class="grid-image">
+            <p class="centered">
+              Serverless, progressive web application (PWA) with React using a test-driven development (TDD)
+              technique.
+              The application uses the Google Calendar API to fetch upcoming events.
+            </p>
+          </div>
+          <div class="grid__item__buttons">
+            <a class="button" href="https://github.com/Numenot/meet_app" target="_blank">See project on GitHub</a>
+            <br />
+            <a class="button" href="https://numenot.github.io/meet_app/" target="_blank">Live site</a>
+          </div>
+        </div>
+        <div class="grid__item">
+          <h2>Mobile Chat App</h2>
+          <div class="stack_logo_container">
+            <img src="./img/javascript.png" alt="javascript logo" class="stack_logo">
+            <img src="./img/expo.png" alt="expo logo" class="stack_logo">
+            <img src="./img/react.png" alt="react logo" class="stack_logo">
+            <img src="./img/firestore.png" alt="firestore logo" class="stack_logo">
+          </div>
+          <div class="image-container">
+            <img src="./img/chat-app-screenshot.png" alt="Mobile Chat App screenshot" class="grid-image">
+            <p class="centered">
+              Chat App built using React Native, Expo, and Google Firestore Database. Allows user to send messages,
+              images and their location via chat. Messages are saved and can be seen offline.
+            </p>
+          </div>
+          <div class="grid__item__buttons">
+            <a class="button" href="https://github.com/Numenot/Chat-App" target="_blank">See project on GitHub</a>
+          </div>
+        </div>
+        <div class="grid__item">
+          <h2>myFlix (Angular)</h2>
+          <div class="stack_logo_container">
+            <img src="./img/html-5.png" alt="html5 logo" class="stack_logo">
+            <img src="./img/css3.png" alt="css3 logo" class="stack_logo">
+            <img src="./img/angularjs.png" alt="angular logo" class="stack_logo">
+            <img src="./img/mongodb.png" alt="mongo logo" class="stack_logo">
+            <img src="./img/typescript.png" alt="typescript logo" class="stack_logo">
+            <img src="./img/nodejs.png" alt="nodejs logo" class="stack_logo">
+          </div>
+          <div class="image-container">
+            <img src="./img/myFlix-Angular.png" alt="myFlix Angular screenshot" class="grid-image">
+            <p class="centered">
+              Application built using Angular (version 9) and designed using Angular Material. Movie data is pulled
+              from my own
+              REST API and database.
+            </p>
+          </div>
+          <div class="grid__item__buttons">
+            <a class="button" href="https://github.com/Numenot/myFlix-Angular-client/" target="_blank">See project on
+              GitHub</a>
+            <br />
+            <a class="button" href="https://numenot.github.io/myFlix-Angular-client/welcome" target="_blank">Live
+              site</a>
+          </div>
         </div>
       </div>
+    </div>
+
+    <hr class="main_page_breaks">
+
+    <!-- Contact section -->
+    <div class="page-body contact-page__body">
+      <h1 id="contact">Contact me</h1>
+      <div>
+        10625 Berlin<br>
+        Germany<br>
+        <br>
+        My email: <a href="mailto:qlv6719@gmail.com">qlv6719(at)gmail(dot)com</a>
+        <br>
+        Reach out on: <a href="https://www.linkedin.com/in/quentinvinesse">LinkedIn</a>
+        <br>
+        <a href="https://medium.com/@qlv6719"> Medium</a>
+        <br>
+        <a href="https://twitter.com/QVinesse"> Twitter</a>
+      </div>
+    </div>
   </main>
+
+  <!-- Footer -->
   <footer class="page-footer">
     <p>Find me on</p>
     <div class="social-media">
-      <a href="https://github.com/Numenot?tab=repositories"> <img src="img/github_icon.svg" alt="Github logo"> </a>
+      <a href="https://github.com/Numenot"> <img src="img/github_icon.svg" alt="Github logo"> </a>
       <a href="https://www.linkedin.com/in/quentinvinesse/"> <img src="img/linkedin_icon.svg" alt="LinkedIn logo"> </a>
     </div>
   </footer>
-
-  <script src="js/tota11y.min.js"></script>
 </body>
 
 </html>
